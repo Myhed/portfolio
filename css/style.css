@@ -3175,7 +3175,7 @@ input[type="button"].btn-block {
 
 .navbar-mainColor {
   padding: 0; }
-  .navbar-mainColor .fa {
+  .navbar-mainColor .fab {
     font-size: 18px; }
   .navbar-mainColor .navbar-brand {
     color: #fdfdfd; }
@@ -3185,7 +3185,8 @@ input[type="button"].btn-block {
     display: block;
     padding: 1rem; }
   .navbar-mainColor .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 0.5);
+    border-right: 1px solid #1a8a95; }
     .navbar-mainColor .navbar-nav .nav-link:hover, .navbar-mainColor .navbar-nav .nav-link:focus {
       color: #fdfdfd;
       background-color: #157079; }
@@ -7175,3 +7176,5 @@ a.text-mainColor:hover, a.text-mainColor:focus {
   text-align: center;
   padding: 30px 0;
   color: #ffffff; }
+  .section-a .fab {
+    font-size: 70px; }

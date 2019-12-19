@@ -194,7 +194,7 @@
 
 .navbar-mainColor {
   padding:0;
-  .fa {
+  .fab {
     font-size: 18px;
   }
   .navbar-brand {
@@ -212,7 +212,7 @@
     }
     .nav-link {
       color: $navbar-mainColorTheme-color;
-
+      border-right: 1px solid darken($main-color, .5%);
       @include hover-focus {
         color: $navbar-mainColorTheme-hover-color;
         background-color: darken($main-color,7%);
