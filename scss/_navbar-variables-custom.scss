@@ -1,0 +1,9 @@
+$navbar-mainColorTheme-color:                rgba(#fff, .5) !default;
+$navbar-mainColorTheme-hover-color:          darken(#fff, .7) !default;
+$navbar-mainColorTheme-active-color:         darken(#fff, .9) !default;
+$navbar-mainColorTheme-disabled-color:       rgba(#fff, .3) !default;
+$navbar-mainColorTheme-toggler-icon-bg:      str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") !default;
+$navbar-mainColorTheme-toggler-border-color: rgba(#fff, .1) !default;
+
+$navbar-mainColorTheme-brand-color:                $navbar-mainColorTheme-active-color !default;
+$navbar-mainColorTheme-brand-hover-color:          $navbar-mainColorTheme-active-color !default;

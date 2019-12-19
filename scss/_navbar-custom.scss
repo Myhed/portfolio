@@ -52,9 +52,7 @@
   }
 }
 
-.navbar.navbar-light {
-  height: 75 * 1.5;
-}
+
 
 // Navbar nav
 //
@@ -191,6 +189,74 @@
 // Styles for switching between navbars with light or dark background.
 
 // Dark links against a light background
+
+// Navbar mainColor is a custom navbar
+
+.navbar-mainColor {
+  padding:0;
+  .fa {
+    font-size: 18px;
+  }
+  .navbar-brand {
+    color: $navbar-mainColorTheme-brand-color;
+
+    @include hover-focus {
+      color: $navbar-mainColorTheme-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    a {
+      display: block;
+      padding: $spacer;
+    }
+    .nav-link {
+      color: $navbar-mainColorTheme-color;
+
+      @include hover-focus {
+        color: $navbar-mainColorTheme-hover-color;
+        background-color: darken($main-color,7%);
+      }
+
+      &.disabled {
+        color: $navbar-mainColorTheme-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-mainColorTheme-active-color;
+      background-color: darken($main-color,7%);
+    }
+   
+  }
+
+
+
+  .navbar-toggler {
+    color: $navbar-mainColorTheme-color;
+    border-color: $navbar-mainColorTheme-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-mainColorTheme-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-mainColorTheme-color;
+    a {
+      color: set-text-color($navbar-mainColorTheme-active-color);
+
+      @include hover-focus {
+        color: $navbar-mainColorTheme-active-color;
+      }
+    }
+  }
+}
+
+
 .navbar-light {
   .navbar-brand {
     color: $navbar-light-brand-color;
