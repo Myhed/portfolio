@@ -7173,8 +7173,49 @@ a.text-mainColor:hover, a.text-mainColor:focus {
 
 .section-a {
   background: #1a8c97;
-  text-align: center;
   padding: 30px 0;
+  text-align: center;
   color: #ffffff; }
-  .section-a .fab {
+  .section-a h2 {
+    margin-bottom: 30px; }
+  .section-a .fab, .section-a .fa, .section-a .fas {
+    font-size: 120px;
+    width: 100%; }
+  .section-a .card-text, .section-a .card-title {
+    color: #ffffff; }
+  .section-a .card {
+    background: #167983;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .section-a .card {
+        width: 100%; } }
+  .section-a .container {
+    padding: 0; }
+    @media (min-width: 576px) {
+      .section-a .container {
+        padding: 0; } }
+  .section-a .card:hover {
+    background: #1e9fab; }
+
+.section-b {
+  padding: 30px 0; }
+  .section-b .fab, .section-b .fas {
     font-size: 70px; }
+  .section-b .qualite {
+    background: #167983;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 20px; }
+  .section-b .qualite:hover {
+    opacity: 1;
+    background: ligthen(white, 4.7%); }
+
+.section-c {
+  background: #1a8c97;
+  padding: 30px 0;
+  text-align: center;
+  color: #ffffff; }

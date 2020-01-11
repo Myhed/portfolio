@@ -28,6 +28,7 @@
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="/css/style.css" rel="stylesheet">
 </head>
 
@@ -59,38 +60,100 @@
   </nav>
   <div class="showcase">
     <div class="container">
-      <h1>BTS SIO opt SLAM</h1>
-      <p class="lead">
-        Je me nomme Myhed Ben-Rhouma je suis en seconde année de BTS SIO , avant d'intégrer ce BTS je suis passé par plusieurs BTS informatique comme le BTS SNIR (système numérique informatique et réseau)
-        et SNEC ( système numérique électronique et communication ).
-        
-     </p>
-      <button class="btn btn-mainColor">En savoir plus</button>
+      <h1>A propos de moi</h1>
+      <p class="lead"></p>
+      <button class="btn btn-mainColor" id="apropos">En savoir plus</button>
     </div>
   </div>
   <div class="section-a">
     <div class="container">
       <div class="row">
+        <h2>Technologies utiliser</h2>
+      </div>
+      <div class="row">
         <div class="col-md-4">
-          <i class="fab fa-node-js"></i>
-          <h3>Nodejs</h3>
-          <p>d</p>
+          <div class="card">
+            <i class="fa devicon-nodejs-plain"></i>
+            <div class="card-body">
+              <h5 class="card-title">Nodejs</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-mainColor">Documentation</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <i class="fab fa-html5"></i>
-          <h3>HTML 5</h3>
-          <p>d</p>
+          <div class="card">
+            <i class="fa devicon-typescript-plain"></i>
+            <div class="card-body">
+              <h5 class="card-title">Typescript</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-mainColor">Documentation</a>
+            </div>
+          </div>         
         </div>
         <div class="col-md-4">
-          <i class="fab fa-css3-alt"></i>
-          <h3>CSS3</h3>
-          <p>d</p>
+          <div class="card">
+            <i class="fa devicon-redis-plain"></i>
+            <div class="card-body">
+              <h5 class="card-title">Redis</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-mainColor">Documentation</a>
+            </div>
+          </div>  
         </div>
       </div>
     </div>
   </div>
 
+  <div class="section-b">
+    <div class="container">
+      <h2>Expérience professionnel</h2>
+
+      <p>Issu d'un bac professionnel SEN ( Système electronique et numérique ) en initiale j'ai effectué durant mes 3 ans de la seconde à la terminal mes stages dans une entreprise qui faisait essentiellement du dépannage informatique comme la société ACR sysInformatique qui est à présent fermer
+        puis j'ai eu une expérience professionnel avec la formation 6 mois auquels ils nous préparaient à opérer dans des projets webs et ma dernière expérience ce trouve celle actuellement en alternance chez laposte depuis presque maintenant 3 ans. </p>
+
+      <h2>Projet professionnel</h2>
+
+      <p>Depuis que je travail au sein de Laposte j'ai pu voir tout un écosystème d'une chaîne de production informatique avec des méthodologies émergente dans ce milieu comme l'agile et le kanban mais aussi des outils qui permettent de faire des transitions entre la phase de dévelopment,test,préproduction,production
+        comme jenkins,gitlab qui depuis peu à lancer une CI/CD ( Continuous Intégration, Continuous Delivery and Deployment ). Mais aussi différent site web qui permettent la création de user story (ticket) comme trello , jira pour finir j'ai pu également observer comment architecturer une solution et observer quelles
+        reflexions mon maître de stage à faite pour arriver à cette architecture et quelles contraintes on été évalué pour avoir choisi un type d'architecture plutôt qu'une autre. suite à cela mon projet professionnel serait de devenir architect informatique ce que occupe mon maître de stage.</p>
+
+        <h2>Mes qualité</h2>
+
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="qualite">
+                <i class="fas fa-users"></i>
+                <h2>Travai d'équipe</h2>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="qualite">
+                <i class="fas fa-users"></i>
+                <h2>Travai d'équipe</h2>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="qualite">
+                <i class="fas fa-users"></i>
+                <h2>Travai d'équipe</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="section-c">
+    <div class="container">
+      <h2>Veilles technologique</h2>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/logo-status.js"></script>
 </body>
 
 </html>

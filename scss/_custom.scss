@@ -16,11 +16,72 @@
 
 .section-a {
     background: $main-color;
-    text-align: center;
     padding: 30px 0;
+    text-align: center;
     color: set-text-color($main-color);
 
-    .fab {
+    h2{
+        margin-bottom: 30px;
+    }
+
+    .fab,.fa,.fas {
+        font-size: 120px;
+        width:100%;
+    }
+    .card-text,.card-title{
+        color:set-text-color(darken($main-color,4.7%));
+    }
+    .card {
+        background: darken($main-color,4.7%);
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+        @include media-breakpoint-up(xs){
+           width: 100%;
+        }
+
+        @include media-breakpoint-up(sm){
+            width: 100%;
+         }
+    }
+    .container {
+        @include media-breakpoint-up(xs){
+            padding:0;
+         }
+
+        @include media-breakpoint-up(sm){
+            padding:0;
+         }
+    }
+
+    .card:hover{
+        background: lighten($main-color,4.7%);
+    }
+}
+
+.section-b {
+    padding: 30px 0;
+
+    .fab,.fas {
         font-size: 70px;
     }
+
+    .qualite {
+        background: darken($main-color,4.7%);
+        color:white;
+        opacity: 0.8;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .qualite:hover{
+        opacity: 1;
+        background:ligthen(white, 4.7%);
+    }
+}
+
+.section-c{
+    background: $main-color;
+    padding: 30px 0;
+    text-align: center;
+    color: set-text-color($main-color);
 }
