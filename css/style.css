@@ -7231,7 +7231,7 @@ html, body {
 *:after {
   box-sizing: border-box; }
 
-h1 {
+.content-test h1 {
   color: #fff;
   position: relative;
   position: absolute;
@@ -7239,7 +7239,7 @@ h1 {
   top: 20%;
   transform: translateX(-50%);
   white-space: nowrap; }
-  h1:after {
+  .content-test h1:after {
     content: '';
     position: absolute;
     width: 0;
