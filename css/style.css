@@ -7171,11 +7171,35 @@ a.text-mainColor:hover, a.text-mainColor:focus {
     opacity: 0.8;
     padding: 20px 30px 30px 30px; }
 
+.section-question {
+  background-color: #1a8c97;
+  color: #ffffff;
+  font-weight: bold; }
+  .section-question .container {
+    padding: 30px 0; }
+
+.section-experience2 .container {
+  padding: 30px 0; }
+
+.section-entreprise {
+  margin: 30px; }
+  .section-entreprise .fab, .section-entreprise .fa, .section-entreprise .fas {
+    font-size: 65px;
+    width: 100%; }
+  .section-entreprise .card {
+    text-align: center;
+    background: ligthen(#ccc, 2.7%);
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .section-entreprise .card {
+        width: 100%; } }
+
 .section-a {
-  background: #1a8c97;
   padding: 30px 0;
-  text-align: center;
-  color: #ffffff; }
+  text-align: center; }
   .section-a h2 {
     margin-bottom: 30px; }
   .section-a .fab, .section-a .fa, .section-a .fas {
@@ -7200,20 +7224,10 @@ a.text-mainColor:hover, a.text-mainColor:focus {
   .section-a .card:hover {
     background: #1e9fab; }
 
-.section-b {
-  padding: 30px 0; }
-  .section-b .fab, .section-b .fas {
-    font-size: 70px; }
-  .section-b .qualite {
-    background: #167983;
-    color: white;
-    opacity: 0.8;
-    text-align: center;
-    border-radius: 20px;
-    padding: 0.7rem; }
-  .section-b .qualite:hover {
-    opacity: 1;
-    background: ligthen(white, 4.7%); }
+.section-b section {
+  font-family: 'Source Sans Pro',Helvetica,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75; }
 
 .section-c {
   background: #1a8c97;
@@ -7330,3 +7344,91 @@ a.cta {
     .content-test.right-is-hovered .left:before {
       background: rgba(0, 0, 0, 0.65);
       z-index: 2; }
+
+#timeline {
+  display: flex;
+  background-color: white; }
+  #timeline:hover .tl-item {
+    width: 23.3333%; }
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease; }
+  .tl-item:before, .tl-item:after {
+    transform: translate3d(0, 0, 0);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .tl-item:after {
+    background: rgba(3, 22, 37, 0.85);
+    opacity: 1;
+    transition: opacity 0.5s ease; }
+  .tl-item:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease; }
+  .tl-item:hover {
+    width: 30% !important; }
+    .tl-item:hover:after {
+      opacity: 0; }
+    .tl-item:hover:before {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) translateY(0);
+      transition: opacity 1s ease, transform 1s ease 0.25s; }
+    .tl-item:hover .tl-content {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.75s ease 0.5s; }
+    .tl-item:hover .tl-bg {
+      filter: grayscale(0); }
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0; }
+  .tl-content h1 {
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #1779cf;
+    font-size: 1.44rem;
+    font-weight: normal; }
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+  .tl-year p {
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.728rem;
+    line-height: 0; }
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%); }
